@@ -774,7 +774,7 @@ body {
 /* Секция с фоновым изображением и прозрачной подложкой */
 .section-animals-bg {
     position: relative;
-    background-image: url("../img_animaux/banner-nos animaux.jpg"); /* ← замени на своё фото */
+    background-image: url("../img_animaux/banner-nos-animaux.jpg"); /* ← замени на своё фото */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
