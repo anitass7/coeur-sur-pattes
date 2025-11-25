@@ -260,13 +260,12 @@
 
             <div class="modal-header">
                 <h5 class="modal-title w-100 text-center">Inscription à une promenade</h5>
-
                 <button class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
 
-                <form>
+                <form id="walk-form">
                     <div class="mb-3">
                         <label class="form-label">Créneau choisi</label>
                         <input type="text" id="selected-slot" class="form-control" readonly>
@@ -274,26 +273,33 @@
 
                     <div class="mb-3">
                         <label class="form-label">Nom et prénom</label>
-                        <input type="text" class="form-control">
+                        <input type="text" id="walk-name" class="form-control">
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control">
+                        <input type="email" id="walk-email" class="form-control">
                     </div>
 
                     <div class="mb-3">
                        <label class="form-label">Choisir un chien</label>
                        <select id="walk-dog-select" class="form-select">
-                       <option value="">Sélectionnez un chien</option>
+                           <option value="">Sélectionnez un chien</option>
                        </select>
-                   </div>
+                    </div>
 
-                    <button class="btn btn-accent d-block mx-auto">S’inscrire</button>
-
+                    <button class="btn btn-accent d-block mx-auto" type="submit">
+                        S’inscrire
+                    </button>
                 </form>
-                <div id="success-message" class="alert alert-success text-center mt-3 d-none">
+               
+
+                <div id="success-message"
+                     class="alert alert-success text-center mt-3 d-none">
                    Merci, votre inscription a été envoyée avec succès ! 😊
+                </div>
+                <div id="error-message" class="alert alert-danger text-center mt-3 d-none">
+                    Merci de remplir correctement tous les champs.
                 </div>
 
 
@@ -356,20 +362,11 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("#modalWalk form");
-    const message = document.getElementById("success-message");
-
-    form.addEventListener("submit", function (e) {
-        e.preventDefault(); // предотвратить reload страницы
-
-        // скрываем форму
-        form.classList.add("d-none");
-
-        // показываем сообщение
-        message.classList.remove("d-none");
-    });
+    // Этот блок оставляем пустым,
+    // чтобы он НЕ ломал modalWalk
 });
 </script>
+
 
 
 </body>

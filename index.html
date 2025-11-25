@@ -360,6 +360,11 @@
                      class="alert alert-success text-center d-none mt-3">
                     Merci pour votre demande de bénévolat 💛
                 </div>
+                <div id="volunteer-error-inside"
+                    class="alert alert-danger text-center d-none mt-3">
+                   Merci de remplir correctement tous les champs.
+                </div>
+
             </div>
 
         </div>
@@ -371,8 +376,9 @@
 <!-- MODAL: dfaire un don-->
 <!-- ------------------------------------------------------------- -->
 
+<!-- MODAL: Faire un don -->
 <div class="modal fade" id="modalDonate">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
             <div class="modal-header">
@@ -382,83 +388,74 @@
 
             <div class="modal-body">
 
-                <!-- Форма доната -->
                 <form id="donateForm">
 
-                    <!-- Имя -->
-                    <div class="mb-3">
-                        <label class="form-label">Votre nom</label>
-                        <input type="text" class="form-control" required>
+                    <!-- 1️⃣ MONTANT -->
+                    <h6 class="mb-2">Montant du don</h6>
+
+                    <div class="d-flex gap-2 mb-2 flex-wrap">
+                        <button type="button" class="don-amount-btn btn btn-outline-accent" data-value="5">5€</button>
+                        <button type="button" class="don-amount-btn btn btn-outline-accent" data-value="10">10€</button>
+                        <button type="button" class="don-amount-btn btn btn-outline-accent" data-value="20">20€</button>
+                        <button type="button" class="don-amount-btn btn btn-outline-accent" data-value="50">50€</button>
                     </div>
 
-                    <!-- ВЫБОР СУММЫ -->
-                    <div class="mb-3">
-                        <label class="form-label d-block">Montant du don</label>
+                    <input type="number" id="don-custom" class="form-control mb-3" min="1"
+                           placeholder="Autre montant">
 
-                        <div class="don-amount-buttons">
-                            <button type="button" class="don-amount-btn" data-value="5">5€</button>
-                            <button type="button" class="don-amount-btn" data-value="10">10€</button>
-                            <button type="button" class="don-amount-btn" data-value="20">20€</button>
-                            <button type="button" class="don-amount-btn" data-value="50">50€</button>
-                        </div>
+                    <!-- 2️⃣ TYPE -->
+                    <h6 class="mt-3 mb-2">Type de don</h6>
+                    <select id="don-type" class="form-select mb-3">
+                        <option value="unique">Don unique</option>
+                        <option value="mensuel">Don mensuel</option>
+                    </select>
 
-                        <input type="number" id="don-custom" class="form-control mt-2" min="1" placeholder="Autre montant">
+                    <!-- 3️⃣ INFO PERSONNELLES -->
+                    <h6 class="mt-3 mb-2">Vos informations</h6>
+
+                    <input type="text" id="don-name" class="form-control mb-2"
+                           placeholder="Nom complet">
+
+                    <input type="email" id="don-email" class="form-control mb-3"
+                           placeholder="Email (pour votre reçu)">
+
+                    <!-- 4️⃣ MÉTHODE DE PAIEMENT -->
+                    <h6 class="mt-3 mb-2">Méthode de paiement</h6>
+
+                    <div class="payment-options mb-3">
+
+                        <label class="payment-option d-block">
+                            <input type="radio" name="payment" value="carte">
+                            Carte bancaire (Stripe)
+                        </label>
+
+                        <label class="payment-option d-block">
+                            <input type="radio" name="payment" value="paypal">
+                            PayPal
+                        </label>
+
+                        <label class="payment-option d-block">
+                            <input type="radio" name="payment" value="applepay">
+                            Apple Pay
+                        </label>
                     </div>
 
-                    <!-- ПЕРИОДИЧНОСТЬ -->
-                    <div class="mb-3">
-                        <label class="form-label d-block">Type de don</label>
-
-                        <select class="form-select" id="don-type">
-                            <option value="unique">Don unique</option>
-                            <option value="mensuel">Don mensuel</option>
-                        </select>
-                    </div>
-
-                    <!-- МЕТОД ОПЛАТЫ -->
-                    <div class="mb-3">
-                        <label class="form-label d-block">Méthode de paiement</label>
-
-                        <div class="payment-options">
-
-                            <label class="payment-option">
-                                <input type="radio" name="payment" value="carte" required>
-                                <i class="bi bi-credit-card-2-front-fill"></i>
-                                Carte bancaire
-                            </label>
-
-                            <label class="payment-option">
-                                <input type="radio" name="payment" value="paypal">
-                                <i class="bi bi-paypal"></i>
-                                PayPal
-                            </label>
-
-                            <label class="payment-option">
-                                <input type="radio" name="payment" value="applepay">
-                                <i class="bi bi-apple"></i>
-                                Apple Pay
-                            </label>
-
-                        </div>
-                    </div>
-
-                    <!-- СООБЩЕНИЕ -->
-                    <div class="mb-3">
-                        <label class="form-label">Message (optionnel)</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-
-                    <!-- КНОПКА -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-accent">Envoyer</button>
-                    </div>
+                    <!-- 5️⃣ BOUTON -->
+                    <button type="submit" class="btn btn-accent w-100 mt-3">
+                        Faire un don
+                    </button>
 
                 </form>
 
-                <!-- Блок успеха -->
+                <!-- Messages -->
+                <div id="donate-error-inside"
+                     class="alert alert-danger text-center mt-3 d-none">
+                    Merci de remplir tous les champs obligatoires.
+                </div>
+
                 <div id="donate-success-inside"
-                     class="alert alert-success text-center d-none mt-3">
-                    Merci pour votre généreux don ❤️
+                     class="alert alert-success text-center mt-3 d-none">
+                    Merci pour votre don ❤️ redirection en cours...
                 </div>
 
             </div>
@@ -466,6 +463,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 
