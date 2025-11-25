@@ -1,0 +1,82 @@
+[
+  {
+    "id": "DG001",
+    "nom": "Rex",
+    "age": "4 ans",
+    "sexe": "Mâle",
+    "race": "Berger Allemand",
+    "photo": "img_animaux/lesChiens/Berger-Allemand.jpg"
+  },
+  {
+    "id": "DG002",
+    "nom": "Maya",
+    "age": "1 an",
+    "sexe": "Femelle",
+    "race": "Labrador",
+    "photo": "img_animaux/lesChiens/Labrador.jpg"
+  },
+  {
+    "id": "DG003",
+    "nom": "Teddy",
+    "age": "3 ans",
+    "sexe": "Mâle",
+    "race": "Golden Retriever",
+    "photo": "img_animaux/lesChiens/Golden-Retriever.jpg"
+  },
+  {
+    "id": "DG004",
+    "nom": "Zoe",
+    "age": "6 mois",
+    "sexe": "Femelle",
+    "race": "Beagle",
+    "photo": "img_animaux/lesChiens/Beagle.jpg"
+  },
+  {
+    "id": "DG005",
+    "nom": "Oscar",
+    "age": "5 ans",
+    "sexe": "Mâle",
+    "race": "Husky Sibérien",
+    "photo": "img_animaux/lesChiens/Husky-Sibérien.jpg"
+  },
+  {
+    "id": "DG006",
+    "nom": "Molly",
+    "age": "2 ans",
+    "sexe": "Femelle",
+    "race": "Border Collie",
+    "photo": "img_animaux/lesChiens/Border-Collie.jpg"
+  },
+  {
+    "id": "DG007",
+    "nom": "Rocky",
+    "age": "1 an",
+    "sexe": "Mâle",
+    "race": "Shiba Inu",
+    "photo": "img_animaux/lesChiens/Shiba-Inu.jpg"
+  },
+  {
+    "id": "DG008",
+    "nom": "Bella",
+    "age": "7 mois",
+    "sexe": "Femelle",
+    "race": "Dalmatien",
+    "photo": "img_animaux/lesChiens/Dalmatien.jpg"
+  },
+  {
+    "id": "DG009",
+    "nom": "Toby",
+    "age": "3 ans",
+    "sexe": "Mâle",
+    "race": "Caniche",
+    "photo": "img_animaux/lesChiens/Caniche.jpg"
+  },
+  {
+    "id": "DG010",
+    "nom": "Lily",
+    "age": "6 ans",
+    "sexe": "Femelle",
+    "race": "Bouvier Bernois",
+    "photo": "img_animaux/lesChiens/Bouvier-Bernois.jpg"
+  }
+]

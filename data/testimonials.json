@@ -1,0 +1,17 @@
+[
+  {
+    "photo": "img_animaux/foto-bella.jpg",
+    "name": "Bella",
+    "text": "Bella vit maintenant heureuse dans sa nouvelle famille."
+  },
+  {
+    "photo": "img_animaux/foto-rex.jpg",
+    "name": "Rex",
+    "text": "Rex a trouvé un foyer plein d'amour."
+  },
+  {
+    "photo": "img_animaux/foto-luna.jpg",
+    "name": "Luna",
+    "text": "Luna profite enfin d’une vie sereine."
+  }
+]
