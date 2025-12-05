@@ -340,7 +340,7 @@ const volunteerError = volunteerModal?.querySelector("#volunteer-error-inside");
 
 if (volunteerForm && volunteerSuccess && volunteerError) {
 
-    // При открытии модалки скрываем прошлые сообщения
+   
     volunteerModal.addEventListener("show.bs.modal", () => {
         volunteerSuccess.classList.add("d-none");
         volunteerError.classList.add("d-none");
@@ -358,20 +358,20 @@ if (volunteerForm && volunteerSuccess && volunteerError) {
 
         const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-        // Проверка полей
+       
         if (!name || !email || !emailValid || !message) {
             volunteerError.classList.remove("d-none");
             volunteerSuccess.classList.add("d-none");
-            return; // ❗ модалка НЕ закрывается
+            return; 
         }
 
-        // Скрываем ошибку, показываем успех
+      
         volunteerError.classList.add("d-none");
         volunteerSuccess.classList.remove("d-none");
 
         volunteerForm.reset();
 
-        // Закрытие через 2 секунды
+        
         setTimeout(() => {
             const modalInstance = bootstrap.Modal.getOrCreateInstance(volunteerModal);
             modalInstance.hide();
@@ -396,7 +396,7 @@ const donateError = document.getElementById("donate-error-inside");
 
 if (donateForm && donateModal) {
 
-    // Сбрасываем сообщения при открытии модалки
+  
     donateModal.addEventListener("show.bs.modal", () => {
         donateSuccess.classList.add("d-none");
         donateError.classList.add("d-none");
@@ -406,14 +406,14 @@ if (donateForm && donateModal) {
     donateForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // 1. Считываем поля
+       
         const name = document.getElementById("don-name").value.trim();
         const email = document.getElementById("don-email").value.trim();
         const customAmount = document.getElementById("don-custom").value.trim();
         const donType = document.getElementById("don-type").value;
         const payment = document.querySelector("input[name='payment']:checked");
 
-        // Определение суммы (кнопка или поле)
+       
         let montant = customAmount;
         document.querySelectorAll(".don-amount-btn").forEach(btn => {
             if (btn.classList.contains("btn-active")) {
@@ -421,28 +421,28 @@ if (donateForm && donateModal) {
             }
         });
 
-        // 2. Проверка формата email (email может быть необязательным)
+        
         const emailValid =
             email.length === 0 || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-        // 3. Проверка всех обязательных полей
+        
         if (
-            !name ||                       // имя пустое
-            !montant || Number(montant) <= 0 || // сумма не выбрана
-            !donType ||                     // тип доната
-            !payment ||                     // способ оплаты
-            !emailValid                     // неверный формат email
+            !name ||                       
+            !montant || Number(montant) <= 0 || 
+            !donType ||                     
+            !payment ||                     
+            !emailValid                     
         ) {
             donateError.classList.remove("d-none");
             donateSuccess.classList.add("d-none");
-            return; // ❗ НЕ закрывать модалку
+            return; // 
         }
 
-        // 4. Всё корректно — показываем успех
+    
         donateError.classList.add("d-none");
         donateSuccess.classList.remove("d-none");
 
-        // 5. Закрываем модалку через небольшую паузу
+       
         const modalInstance = bootstrap.Modal.getOrCreateInstance(donateModal);
         setTimeout(() => {
             modalInstance.hide();
@@ -453,7 +453,7 @@ if (donateForm && donateModal) {
     });
 }
 
-/* ЛОГИКА КНОПОК СУММ */
+
 document.querySelectorAll(".don-amount-btn").forEach(btn => {
     btn.addEventListener("click", () => {
         document.querySelectorAll(".don-amount-btn")
