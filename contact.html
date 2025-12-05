@@ -16,10 +16,10 @@
 <body>
 
     <!-- ------------------------------------------------------------- -->
-    <!-- HEADER (identique sur toutes les pages) -->
+    <!-- HEADER  -->
     <!-- ------------------------------------------------------------- -->
 
-    <!-- HEADER -->
+ 
 <header>
     <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
         <div class="container d-flex align-items-center justify-content-between">
@@ -228,15 +228,15 @@
 
     <script>
 document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // чтобы страница не перезагружалась
+    e.preventDefault(); 
     
-    // показываем сообщение
+    
     document.getElementById("formSuccess").style.display = "block";
 
-    // очищаем форму
+    
     this.reset();
 
-    // скрыть сообщение через 5 секунд (опционально)
+    
     setTimeout(() => {
         document.getElementById("formSuccess").style.display = "none";
     }, 5000);
