@@ -234,13 +234,13 @@ footer h5 {
         padding: 1.5rem;
     }
 }
-/* NAVBAR – фон как вокруг логотипа */
+/* NAVBAR  */
 .navbar-custom {
     background-color: var(--cream) !important;
     padding: 15px 0;
 }
 
-/* Кнопки навигации в форме "пилюль" горчичного цвета */
+
 .navbar-custom .nav-link {
     color: var(--dark-green) !important;
     font-weight: 600;
@@ -273,14 +273,14 @@ footer h5 {
 }
 
 .bg-purple h2 {
-    margin-bottom: 25px; /* можешь поставить 25/30px */
+    margin-bottom: 25px; 
 }
 .bg-purple .btn {
-    margin-top: 35px; /* можешь поставить 30px или 35px */
+    margin-top: 35px; 
 }
-/* Масштабируемое сердце */
+
 .heart-pulse {
-    --size: 30px; /* <<< Меняешь только ЭТО! */
+    --size: 30px; 
     width: var(--size);
     height: var(--size);
     position: relative;
@@ -310,39 +310,39 @@ footer h5 {
     top: 0;
 }
 
-/* Анимация */
+
 @keyframes pulse {
     0%   { transform: rotate(-45deg) scale(1); }
     50%  { transform: rotate(-45deg) scale(1.15); }
     100% { transform: rotate(-45deg) scale(1); }
 }
 
-/* TITRE в блоке Pourquoi adopter */
+
 .pourquoi-card-title {
-    color: var(--ochre) !important;   /* твой фиолетовый цвет */
+    color: var(--ochre) !important;  
 }
 
-/* ПИКТОГРАММА в блоке Pourquoi adopter */
+
 .pourquoi-card-icon {
-    color: var(--purple) !important;   /* можно заменить на любой */
+    color: var(--purple) !important;  
 }
 
-/* Цвет цифр */
+
 .stat-value {
     color: var(--orange) !important;
 }
 
-/* Цвет текста под цифрой */
+
 .stat-card p {
     color: var(--purple) !important;
 }
 
-/* Цвет иконки */
+
 .stat-card i {
     color: var(--green) !important;
 }
 
-/* Контейнер карточек */
+
 .testimonial-card {
     background-color: var(--cream);          /* фон карточки (можно менять) */
     border: 2px solid var(--purple);         /* рамка */
@@ -350,7 +350,7 @@ footer h5 {
     padding: 20px;
 }
 
-/* Фото */
+
 .testimonial-photo {
     width: 100%;             /* на всю ширину */
     height: 240px;           /* фиксированная высота */
@@ -358,13 +358,13 @@ footer h5 {
     border-radius: 16px;     /* скругление */
 }
 
-/* Имя */
+
 .testimonial-name {
     color: var(--purple);    /* цвет имени */
     font-weight: 700;
 }
 
-/* Текст */
+
 .testimonial-text {
     color: #555;             /* можно поменять на var(--orange) или другой */
 }
@@ -373,7 +373,7 @@ footer h5 {
    TÉMOIGNAGES — CARDS
    ============================= */
 
-/* Карточка — одинаковая высота */
+
 .testimonial-card {
     background-color: var(--cream);
     border: 2px solid var(--purple);
@@ -383,14 +383,14 @@ footer h5 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* центрирование */
+    align-items: center;  
     justify-content: flex-start;
 }
 
-/* ФОТО — мягкий квадрат + центрирование */
+
 .testimonial-photo {
     width: 100% !important;
-    height: 300px !important;     /* ← теперь работает */
+    height: 300px !important;    
     object-fit: cover !important;
     display: block !important;
     margin: 0 auto !important;
@@ -408,14 +408,14 @@ footer h5 {
     text-align: center;
 }
 
-/* Текст */
+
 .testimonial-text {
     color: #444;
     margin-top: 10px;
     text-align: center;
 }
 
-/* Стили соцсетей в футере */
+
 .footer-social {
     color: var(--white) !important;
     text-decoration: none;
@@ -428,14 +428,14 @@ footer h5 {
     vertical-align: middle;
 }
 
-/* Наведение */
+
 .footer-social:hover {
     color: var(--orange) !important;
 }
 
 
 
-/* Фото в карточках карусели */
+
 .animal-carousel-photo {
     width: 100%;
     height: 220px;
@@ -443,18 +443,17 @@ footer h5 {
     border-radius: 12px;
 }
 
-/* Карточка */
+
 .animal-carousel-card {
     width: 100%;
     border-radius: 12px;
 }
 
-/* Для колонки */
+
 #animalsCarousel .col-md-4 {
     max-width: 33.333%;
 }
 
-/* Анимация появления блока на баннере */
 .hero-box {
     opacity: 0;
     transform: translateY(40px);
@@ -472,7 +471,7 @@ footer h5 {
     }
 }
 
-/* Кнопки фиксированных сумм */
+
 .don-amount-buttons {
     display: flex;
     gap: 10px;
@@ -493,7 +492,7 @@ footer h5 {
     background: var(--orange);
 }
 
-/* Опции оплаты */
+
 .payment-options {
     display: flex;
     flex-direction: column;
@@ -529,15 +528,15 @@ footer h5 {
     padding: 15px 20px;
     position: relative;
 }
-/* ===== РОВНЫЕ ВЕРТИКАЛЬНЫЕ ЛИНИИ ВО ВСЮ ВЫСОТУ ФУТЕРА ===== */
+
 .footer-row {
     position: relative;
 }
 
-/* Показываем линии только на экранах ≥ 768px */
+
 @media (min-width: 768px) {
 
-    /* Первая линия (между 1 и 2 колонкой) */
+  
     .footer-row::before {
         content: "";
         position: absolute;
@@ -548,7 +547,7 @@ footer h5 {
         background-color: rgba(255, 255, 255, 0.3);
     }
 
-    /* Вторая линия (между 2 и 3 колонкой) */
+    
     .footer-row::after {
         content: "";
         position: absolute;
@@ -562,19 +561,19 @@ footer h5 {
 .footer-block {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* центрирование по вертикали */
+    justify-content: center; 
 }
 
-/* === Ровные высоты колонок футера === */
+
 .footer-block {
     display: flex;
 }
 
 .footer-inner {
-    margin: auto 0; /* вертикальное центрирование */
+    margin: auto 0; 
 }
 
-/* === Вертикальные линии === */
+
 .footer-row {
     position: relative;
 }
@@ -592,18 +591,17 @@ footer h5 {
         background-color: rgba(255, 255, 255, 0.25);
     }
 
-    /* Линия между 1 и 2 */
+  
     .footer-row::before {
         left: 33.333%;
     }
 
-    /* Линия между 2 и 3 */
     .footer-row::after {
         left: 66.666%;
     }
 }
 
-/* Соцсети */
+
 .footer-social {
     text-decoration: none;
     font-size: 1rem;
@@ -613,29 +611,29 @@ footer h5 {
 .footer-social:hover {
     color: var(--orange) !important;
 }
-/* РАСТЯГИВАЕМ ВСЕ КОЛОНКИ ФУТЕРА */
+
 .footer-row {
     align-items: stretch !important; 
 }
 
-/* Делаем каждую колонку flex-контейнером одинаковой высоты */
+
 .footer-block {
     display: flex !important;
 }
 
-/* Контент в колонке — вертикально по центру */
+
 .footer-inner {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-/* Общий стиль футера */
+
 .footer-custom {
     background-color: var(--green-dark) !important;
     position: relative;
 }
 
-/* Соцсети */
+
 .footer-social {
     color: #e7e7e7;
     text-decoration: none;
@@ -646,25 +644,25 @@ footer h5 {
     color: var(--orange);
 }
 
-/* === Высота колонок — растягиваем как Figma === */
+
 .footer-row {
     display: flex;
     align-items: stretch !important; /* все колонки одной высоты */
     position: relative;
 }
 
-/* Каждая колонка — flex-контейнер */
+
 .footer-block {
     display: flex !important;
 }
 
-/* Контент по вертикальному центру */
+
 .footer-inner {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-/* === Вертикальные линии на десктопе === */
+
 @media (min-width: 768px) {
 
     .footer-row::before,
@@ -677,32 +675,32 @@ footer h5 {
         background-color: rgba(255, 255, 255, 0.25);
     }
 
-    /* Линия между 1 и 2 колонкой */
+   
     .footer-row::before {
         left: 33.333%;
     }
 
-    /* Линия между 2 и 3 колонкой */
+  
     .footer-row::after {
         left: 66.666%;
     }
 }
 
-/* Футер-строка — три колонки одинаковой высоты */
+
 .footer-row {
     display: flex;
     align-items: stretch;
 }
 
-/* Каждая колонка — делает центрирование содержимого */
+
 .footer-block {
     display: flex;
 }
 
-/* Центрируем контент вертикально и горизонтально */
+
 .footer-inner {
-    margin: auto;        /* вертикальный ЦЕНТР */
-    text-align: center;  /* горизонтальный центр текста */
+    margin: auto;        
+    text-align: center;  
 }
 
 .cta-adoption {
@@ -711,30 +709,30 @@ footer h5 {
 
 /* --- TYPOGRAPHIE --- */
 
-/* Заголовки — жирнее */
+
 h1, h2, h3, h4 {
     font-weight: 700;
 }
 
-/* Lead-текст — слегка жирнее */
+
 .lead {
     font-weight: 500;
 }
 
-/* Обычный текст */
+
 body {
     font-weight: 400;
 }
 
-/* PHOTOS DE PROMENADE — одинаковый размер */
+/* PHOTOS DE PROMENADE  */
 .card-img-top {
-    height: 450px;      /* фиксированная высота (можно изменить) */
-    object-fit: cover;  /* обрезка под нужный размер */
-    width: 100%;        /* адаптивная ширина */
-    border-radius: 8px; /* скругление, как на карточках */
+    height: 450px;      
+    object-fit: cover;  
+    width: 100%;       
+    border-radius: 8px; 
 }
 
-/* Для мобильных — чуть ниже */
+
 @media (max-width: 576px) {
     .card-img-top {
         height: 200px;
@@ -743,7 +741,7 @@ body {
 /* INTRO avec photo + overlay */
 .intro-photo {
     position: relative;
-    background-image: url("../img_animaux/section-background-promenades.jpg"); /* ← замени на своё фото */
+    background-image: url("../img_animaux/section-background-promenades.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -751,17 +749,17 @@ body {
     z-index: 1;
 }
 
-/* Полупрозрачная подложка */
+
 .intro-photo::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.745); /* светлая подложка, 60% прозрачности */
-    backdrop-filter: blur(2px);            /* легкое размытие = суперэффект */
+    background: rgba(255, 255, 255, 0.745); 
+    backdrop-filter: blur(2px);            
     z-index: -1;
 }
 
-/* Контент поверх подложки */
+
 .intro-photo * {
     position: relative;
     z-index: 2;
@@ -771,10 +769,10 @@ body {
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-/* Секция с фоновым изображением и прозрачной подложкой */
+
 .section-animals-bg {
     position: relative;
-    background-image: url("../img_animaux/banner-nos-animaux.jpg"); /* ← замени на своё фото */
+    background-image: url("../img_animaux/banner-nos-animaux.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -782,17 +780,17 @@ body {
     z-index: 1;
 }
 
-/* Полупрозрачная подложка */
+
 .section-animals-bg::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.745); /* мягкая белая подложка */
-    backdrop-filter: blur(2px);            /* лёгкое размытие — красиво */
+    background: rgba(255, 255, 255, 0.745); 
+    backdrop-filter: blur(2px);            
     z-index: 0;
 }
 
-/* Контент всегда над подложкой */
+
 .section-animals-bg > * {
     position: relative;
     z-index: 2;
@@ -801,7 +799,6 @@ body {
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-/* Центрирование текста рядом с фото */
 .contact-text {
     text-align: center;
 }
@@ -809,14 +806,14 @@ body {
     margin-top: 20px;
     font-weight: 600;
 }
-/* Уменьшает фото в блоке контактов */
+
 .contact-photo {
     max-width: 50%;
     display: block;
     margin: 0 auto;
 }
 .section-horaires {
-    margin-bottom: 50px; /* можно 30px, 60px — как тебе нравится */
+    margin-bottom: 50px; 
 }
 /* ---------------------------------------------------------
    PHOTO PLEIN CADRE DANS LA CARTE VERTICALE
@@ -834,9 +831,9 @@ body {
 
 .animal-card img {
     width: 100%;
-    height: 400px;          /* Высота фото-блока */
-    object-fit: cover;      /* Фото полностью заполняет блок */
-    object-position: center; /* Центрирование — чтобы обрезка была аккуратной */
+    height: 400px;         
+    object-fit: cover;      
+    object-position: center; 
     display: block;
     border-radius: 15px 15px 0 0;
 }
@@ -845,35 +842,35 @@ body {
     flex: 1;
     padding: 16px;
 }
-/* Размер фото — регулируется вручную */
+
 .custom-photo-size {
-    width: 100%;         /* изменяемая ширина */
-    height: auto;        /* авто-высота (картинка не искажается) */
-    max-width: 300px;    /* поменяйте на ваш размер */
-    border-radius: 20px; /* округления */
-    object-fit: cover;   /* чтобы фото красиво заполняло блок */
+    width: 100%;         
+    height: auto;        
+    max-width: 300px;   
+    border-radius: 20px; 
+    object-fit: cover;   
 }
 /* FLEX-БЛОК ДЛЯ ФОТО + ТЕКСТ */
 .promo-flex-block {
     display: flex;
     gap: 30px;
-    align-items: center; /* ← центрирует ТЕКСТ по вертикали */
+    align-items: center; 
 }
 
 /* Фото слева */
 .promo-photo img {
-    width: 260px;      /* ← меняешь размер здесь */
+    width: 260px;      
     height: auto;
     border-radius: 20px;
     object-fit: cover;
 }
 
-/* Текст справа */
+
 .promo-texte {
     flex: 1;
 }
 
-/* Адаптив: на телефоне — колонка */
+
 @media (max-width: 768px) {
     .promo-flex-block {
         flex-direction: column;
@@ -891,10 +888,10 @@ body {
     height: auto;
     border-radius: 16px;
     object-fit: cover;
-    margin-left: 100px;   /* ← на десктопе всё нормально */
+    margin-left: 100px;  
 }
 
-/* Адаптив */
+
 @media (max-width: 768px) {
     .promo-flex-block {
         flex-direction: column;
@@ -904,67 +901,65 @@ body {
     .promo-photo img {
         width: 100%;
         max-width: 320px;
-        margin-left: 0;         /* ← ДОБАВЬ ЭТО!!! */
-        margin-right: 0;        /* ← на всякий случай */
-        margin: 0 auto;         /* ← центрирует фото */
+        margin-left: 0;         
+        margin-right: 0;       
+        margin: 0 auto;        
     }
 }
 .promo-texte ul {
-    list-style-position: inside; /* ← точки переходят внутрь */
-    padding-left: 0;            /* убираем стандартный отступ */
-    margin: 0 auto;             /* центрируем блок списка */
-    text-align: left;           /* ← текст ровно под точками */
+    list-style-position: inside; 
+    padding-left: 0;           
+    margin: 0 auto;            
+    text-align: left;          
 }
 .promo-texte ul {
-    list-style: none;          /* убираем стандартные точки */
+    list-style: none;          
     padding: 0;
     margin: 0;
 }
 
 .promo-texte ul li {
     position: relative;
-    padding-left: 25px;        /* отступ для своей точки */
-    text-align: left;           /* текст ровно под маркером */
+    padding-left: 25px;      
+    text-align: left;         
     margin: 6px 0;
 }
 
 .promo-texte ul li::before {
-    content: "•";               /* кастомная точка */
+    content: "•";              
     position: absolute;
     left: 0;
     top: 0;
-    color: var(--green-dark);   /* цвет точки */
+    color: var(--green-dark);   
     font-size: 1.3rem;
     line-height: 1;
 }
 
-/* ==== ОКРУГЛЫЕ ВЕРТИКАЛЬНЫЕ КАРТОЧКИ ==== */
+
 .rounded-card {
     border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
-    aspect-ratio: 3 / 4;      /* вертикальная карточка */
+    aspect-ratio: 3 / 4;     
     display: flex;
 }
 
-/* ==== ФОТО ЗАПОЛНЯЕТ ВСЮ КАРТОЧКУ ==== */
+
 .rounded-card .photo-promenade {
     width: 100%;
     height: 100%;
-    object-fit: cover;        /* заполняет всю карточку */
+    object-fit: cover;       
     display: block;
 }
 
-/* ==== МОБИЛЬНАЯ ВЕРСИЯ ==== */
+
 @media (max-width: 576px) {
     .rounded-card {
-        aspect-ratio: 1 / 1;  /* почти квадрат */
+        aspect-ratio: 1 / 1;  
     }
 }
-/* ================================ */
-/* ВЕРТИКАЛЬНАЯ КАРТОЧКА ЖИВОТНЫХ   */
-/* ================================ */
-/* ==== Вертикальная карточка животного (карусель) ==== */
+
+
 .animal-card-carousel {
     width: 100%;
     background: #fff;
@@ -975,14 +970,14 @@ body {
     height: 380px; /* фиксированная карточка */
 }
 
-/* ===== Фото фиксированной высоты ===== */
+
 .animal-photo-carousel {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-/* ===== Информация ===== */
+
 .info-carousel {
     padding: 12px;
     text-align: center;
@@ -1000,7 +995,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===== Мобильная версия ===== */
+
 @media (max-width: 576px) {
     .animal-card-carousel {
         height: 330px;
