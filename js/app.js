@@ -232,9 +232,16 @@ function initCalendarForWalks() {
                 minDate: "today",
 
                 onDayCreate(_, __, ___, dayElem) {
-                    const d = dayElem.dateObj.toISOString().split("T")[0];
-                    if (dates.includes(d)) dayElem.classList.add("slot-available");
-                },
+    const year  = dayElem.dateObj.getFullYear();
+    const month = String(dayElem.dateObj.getMonth() + 1).padStart(2, "0");
+    const day   = String(dayElem.dateObj.getDate()).padStart(2, "0");
+    const d = `${year}-${month}-${day}`; // формат YYYY-MM-DD
+
+    if (dates.includes(d)) {
+        dayElem.classList.add("slot-available");
+    }
+},
+
 
                 onChange(_, dateStr) {
                     loadWalks(dateStr);
