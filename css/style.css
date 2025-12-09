@@ -267,9 +267,6 @@ footer h5 {
     flex-shrink: 0 !important;
 }
 
-#mainNav {
-    flex-grow: 1;
-}
 
 .bg-purple h2 {
     margin-bottom: 25px; 
