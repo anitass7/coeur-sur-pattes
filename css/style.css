@@ -1012,7 +1012,7 @@ body {
 /* На мобильных — логотип чуть поменьше */
 @media (max-width: 768px) {
     .navbar-logo {
-     height: 100px !important;
+     height: 120px !important;
      width: auto;
     }
 }
