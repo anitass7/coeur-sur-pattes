@@ -1005,3 +1005,18 @@ body {
     }
 }
 
+/* Correction */
+
+/* Логотип в навбаре */
+.navbar-logo {
+    max-height: 80px;   /* высота логотипа на десктопе */
+    height: auto;
+    width: auto;
+}
+
+/* На мобильных — логотип чуть поменьше */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-height: 60px;
+    }
+}
