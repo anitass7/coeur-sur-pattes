@@ -1016,3 +1016,51 @@ body {
         max-height: 60px;
     }
 }
+/* NAVBAR */
+
+.navbar-custom {
+    background-color: var(--cream) !important;
+    padding: 10px 0;
+}
+
+/* логотип */
+.navbar-logo {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-height: 60px;
+    }
+}
+
+/* ссылки меню */
+.navbar-custom .nav-link {
+    color: var(--dark-green) !important;
+    font-weight: 600;
+    padding: 8px 16px !important;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    background-color: var(--mustard);
+    color: var(--dark-green) !important;
+}
+
+/* чуть расстояния между пунктами */
+.navbar-custom .navbar-nav {
+    gap: 0.5rem;
+}
+
+/* чтобы бургер был виден на светлом фоне */
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
