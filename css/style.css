@@ -1005,14 +1005,15 @@ body {
 
 /* Логотип в навбаре */
 .navbar-logo {
-    height: 110px;
+    height: 110px !important;
     width: auto;
 }
 
 /* На мобильных — логотип чуть поменьше */
 @media (max-width: 768px) {
     .navbar-logo {
-     height: 60px;
+     height: 60px !important;
+     width: auto;
     }
 }
 /* NAVBAR */
