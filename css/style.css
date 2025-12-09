@@ -1005,7 +1005,7 @@ body {
 
 /* Логотип в навбаре */
 .navbar-logo {
-    max-height: 170px;   /* высота логотипа на десктопе */
+    max-height: 110px;   /* высота логотипа на десктопе */
     height: auto;
     width: auto;
 }
@@ -1024,11 +1024,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .navbar-logo {
-        max-height: 60px;
-    }
-}
 
 /* ссылки меню */
 .navbar-custom .nav-link {
