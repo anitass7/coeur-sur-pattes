@@ -256,10 +256,9 @@ footer h5 {
 }
 
 .navbar-custom .navbar-nav {
-    display: flex;
-    justify-content: flex-end; /* или center, если хочешь выравнивание по центру */
-    gap: 0.5rem;              /* аккуратные расстояния между пунктами */
+    gap: 0.5rem;  /* только расстояние между пунктами, без display/justify */
 }
+
 
 .hero-accueil {
     margin-bottom: 60px;
