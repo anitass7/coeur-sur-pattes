@@ -19,24 +19,27 @@
 
 <!-- HEADER -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-light shadow-sm">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <!-- LOGO -->
+            <!--  LOGO -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="img_animaux/Logo-projet-refuge.jpg" 
-                     alt="Logo Coeur sur pattes" 
-                     style="height: 170px;" class="me-2">
+                     alt="Logo Coeur sur pattes"
+                     class="navbar-logo me-2">
             </a>
 
-            <!-- BURGER -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <!-- BURGER-MENU -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Afficher / masquer la navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- MENU -->
             <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ms-auto w-100">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="nos-animaux.html">Nos Animaux</a></li>
                     <li class="nav-item"><a class="nav-link" href="promenades.html">Promenades</a></li>
@@ -47,7 +50,7 @@
         </div>
     </nav>
 </header>
-
+    
 <!-- ALERTS -->
 <div id="volunteer-success" class="alert alert-success text-center w-75 mx-auto mt-3 d-none">
     Votre demande a été envoyée avec succès !
