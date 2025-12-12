@@ -566,3 +566,33 @@ if (walkForm && modalWalk && successMessage) {
         }, 1500);
     });
 }
+/* =========================================================
+   FORMULAIRE : CONTACT
+   ========================================================= */
+
+const contactForm = document.getElementById("contactForm");
+const contactSuccess = document.getElementById("formSuccess");
+
+if (contactForm && contactSuccess) {
+
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // встроенная HTML-валидация
+        if (!contactForm.checkValidity()) {
+            contactForm.classList.add("was-validated");
+            return;
+        }
+
+        // успех
+        contactForm.reset();
+        contactForm.classList.remove("was-validated");
+        contactSuccess.style.display = "block";
+
+        // скрыть сообщение через 3 сек
+        setTimeout(() => {
+            contactSuccess.style.display = "none";
+        }, 3000);
+    });
+
+}
